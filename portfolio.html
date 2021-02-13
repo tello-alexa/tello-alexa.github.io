@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Meta tags & Bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+		<title>Alexa Tello - Portfolio</title>
+		<style>
+			h2 {
+				text-align: center;
+      }
+      body {
+            background-image: url(eucalyptus.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            height: 100%;
+      }
+      a:link {
+            color: #d8ff89;
+            background: transparent;
+            text-decoration: none;
+          }
+          a:visited {
+            color: #eab385;
+            background: transparent;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #bba6b7;
+            background: transparent;
+            text-decoration: underline;
+          }
+          a:active {
+            color: #f3e0dc;
+            background: transparent;
+            text-decoration: underline;
+          }
+		</style>
+    </head>
+
+    <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7B4B6E; height: 50px;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="qual.html">Qualifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="disabled.html" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Technical Projects -->
+    <div class="d-flex justify-content-center align-items-center h-200">
+      <div class="text-white">
+        <div class="container-fluid" style="padding: 127px">
+          <h2>Technical Projects</h2>
+          <div>
+              <h3>Stock Market Analysis</h3>
+              <p>The goal for our project was to guide first-time investors of the stock market into making insightful decisions based on our findings. My contribution to this was comparing popular sectors within the stock market (e.g. Finance, Technology, Real Estate) and compared them against each other by categorizing Fortune 500 companies and their respective stock prices over the last ten years. In addition, I calculated the volatility of each sector to express how steady or reliable their stock prices would be, while also accounting for major economic events such as the Great Recession and the beginning of the COVID-19 Pandemic. I used Python on Jupyter Notebook with the <a href="https://pypi.org/project/yfinance/">Yahoo Finance package</a> to get each company's stock prices over the timespan. See project <a href="https://github.tamu.edu/amazonianecho/Past-Projects/blob/master/StockMarketAnalysis.ipynb">here</a>.</p>
+          </div>
+  
+          <div>
+              <h3>Temperature and Sea Level Projection</h3>
+              <p>Meteorology, at its core, is studying atmospheric chemistry and physics for the purpose of weather forecasting. In a two-part project for my course in Computer Applications in the Atmospheric Sciences, I charted the rise of the global mean temperature and sea level rise over the 1900s and used it to project future global temperatures and sea levels for the remainder of the 21st century. Using data from NASA and CSIRO which covered most of the past 120 years, all the data was processed and forecasted with MATLAB. See project <a href="https://github.tamu.edu/amazonianecho/Past-Projects/blob/master/Project2.pdf">here</a>.</p>
+          </div>
+          
+          <div>
+              <h3>Motion Tracking</h3>
+              <p>As part of the Honors section for my lab in Newtonian Mechanics, my group automated a process which recorded the movement of a marked item, promptly followed by a CNC arm recreating its path and speed, optimizing it to be as accurate as possible. This project was accomplished with Python on the Linux Ubuntu software.</p>
+        </div>
+      </div> 
+      </div>
+    </div>
+  </body>
+</html>

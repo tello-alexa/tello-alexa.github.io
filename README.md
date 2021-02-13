@@ -1,2 +1,2 @@
-# tello-alexa.github.io
-This will support my personal website and catalog my experience
+# CSCE_315
+Projects for CSCE 315 (Programming Studio)
