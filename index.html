@@ -1,657 +1,688 @@
-<?php include 'contactform.php';?>
-
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Meta tags & Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="index.css">
+    <title>Alexa R. Tello</title>
+  </head>
 
-    <head>
-        <!-- Meta tags & Bootstrap-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-        <link rel="stylesheet" href="index.css">
-        <title>Alexa R. Tello</title>
-    </head>
+  <body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color:#0b4259;">
+      <!-- Collapsable Content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item current">
+            <a class="nav-link smoothscroll" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothscroll" href="#about">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothscroll" href="#resume">RESUME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothscroll" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smoothscroll" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <body>
-        <header id="home" style="height: 100vh;">
-             <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#0b4259;">
-                <!-- Collapsable Content -->
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item current">
-                            <a class="nav-link smoothscroll" href="#home">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smoothscroll" href="#about">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smoothscroll" href="#resume">RESUME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smoothscroll" href="#projects">PROJECTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link smoothscroll" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-            <!-- Home Banner -->
-            <div class="d-flex align-items-center justify-content-center" style="height:85vh;">
-                <div class="row">
-                    <div class="col mx-auto text-center" style="color: white;">
-                        <h1>
-                            Alexa R. Tello
-                        </h1>
-                        <h3>
-                            <span>Developer</span> | <span>Lifelong Student</span>
-                        </h3>
-                        <!-- Social Media Buttons-->
-                        <div class="row d-flex align-items-center justify-content-center">
-                            <div class="col-sm-1">
-                                <a href="https://linkedin.com/in/alexatello/">
-                                    <img class="img-fluid" src="linkedin.png">
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a href="https://github.com/tello-alexa">
-                                    <img class="img-fluid" style="max-height: 36px;" src="github.png">
-                                </a>
-                            </div>
-                            <div class="col-sm-1">
-                                <a href="mailto:tello.alexa@yahoo.com">
-                                    <i class="bi bi-envelope-fill" style="color: white; font-size: 36px;"></i>
-                                </a>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>    
-            </div>
-
-            <!-- Scroll Button -->
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="col mx-auto text-center">
-                    <a href="#about">
-                        <img class="img-fluid" style="max-height: 40px;" src="down.png">
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!-- About Section -->
-        <section id="about" style="color: white;">  
-            <div class="container-fluid" style="background-color:#0a5066; width: 100%; padding-top: 50px; padding-bottom: 50px;">
-                <!-- Section Header -->
-                <div class="col mx-auto text-center">
-                    <h5>About</h5>
-                    <h1>Howdy! I'm Alexa.</h1>
-                </div>
-
-                <!-- Profile Pic and Bio -->
-                <div class="row justify-content-center" style="padding-top: 20px">
-                    <div class="col-sm-3" style="text-align: center; align-items: center;">
-                        <img src="profile_pic.jfif" width="250" height="250">
-                    </div>
-        
-                    <div class="col-sm-4" style="margin-top: auto; margin-bottom: auto;">
-                        <p class="lead">I'm a recent graduate with a B.S. in Computer Science from Texas A&M University, with a specialization in information systems. My current interests include data management, app development, atmospheric sciences, and more.</p>
-                    </div>
-                </div>
-
-                <!-- Status and Skills -->
-                <div class="row justify-content-center" style="padding-top: 20px">
-                    <div class="col-sm-4">
-                        <h2 class="text-center">Status</h2>
-                        <p>
-                            I am currently open to new oportunities in software engineering, technology consulting, or project management. If you believe that I'm a good fit for any roles, please email me at <a href="mailto:tello.alexa@yahoo.com">tello.alexa@yahoo.com</a>.
-                        </p>
-
-                        <div class="container mx-auto">
-                            <strong>Full Name: </strong><span>Alexa Tello</span>
-                            <br>
-                            <strong>Location: </strong><span>Dallas-Fort Worth Metroplex</span>
-                            <br>
-                            <strong>Email: </strong><span>tello.alexa@yahoo.com</span>
-                            <hr/>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <h2 class="text-center">Skills</h2>
-                        <p>
-                            I'm a detail-oriented team player with strengths in back-end development and research, gaining an assortment of knowledge through my projects and coursework. Below is an overview of my technical skills:
-                        </p>
-                        
-                        <!-- Programming Languages List -->
-                        <h5 style="text-align:left">Programming Languages:</h5>
-                        <div class="row">
-                            <div class="col">
-                                <ul>
-                                <li>C/C++</li>
-                                <li>SQL/MySQL</li>
-                                <li>CSS</li>
-                                <li>Dart</li>
-                                <li>C#</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>MATLAB</li>
-                                <li>Scheme</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                <li>Java</li>
-                                <li>HTML</li>
-                                <li>Ruby</li>
-                                <li>R</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Software List -->
-                        <h5 style="text-align:left">Software:</h5>
-                        <ul>
-                            <li><h6>For Development</h6></li>
-                            <div class="row">
-                                <div class="col">
-                                    <ul>
-                                    <li>Jupyter Notebook</li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <ul>
-                                    <li>Flutter</li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <ul>
-                                    <li>Heroku</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <li><h6>For Project Management</h6></li>
-                            <div class="row">
-                                <div class="col">
-                                    <ul>
-                                    <li>Azure DevOps</li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <ul>
-                                    <li>ServiceNow</li>
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <ul>
-                                    <li>Microsoft Teams</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Get Info Buttons -->
-                <div class="row justify-content-center" style="padding-top: 20px">
-                    <div class="col-sm-2 text-center">
-                        <a href="#contact" class="btn btn-outline-info" role="button">
-                            Contact Me
-                        </a>                        
-                    </div>
-                    <div class="col-sm-2 text-center">
-                        <a role="button" href="resume.pdf" class="btn btn-outline-info">
-                            View Resume
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section id="resume">
-            <div class="container-fluid" style="background-color:#839b89; width: 100%; padding-top: 50px; padding-bottom: 50px;">
-                <!-- Section Header -->
+    <!-- Landing Page -->
+    <header id="home" style="height: 100vh;">       
+        <!-- Home Banner -->
+        <div class="d-flex align-items-center justify-content-center" style="height:90vh;">
+            <div class="row">
                 <div class="col mx-auto text-center" style="color: white;">
-                    <h5>Resume</h5>
-                    <h2>Here are the work experiences and education that helped build my credentials.</h2>
-                    <div class="col-sm-4 mx-auto text-center">
-                        <p>To view how some of my other techincal skills came into play, look through some of my most notable <a href="#projects">projects</a>.</p>
-                    </div>
-                    <h3>Work Experience</h3>
-                </div>
-
-                <!-- Work Experience Timeline -->
-                <div class="container py-5">
-                    <div class="main-timeline-4 text-white">
-                        <!-- Sr. Student Leader -->
-                        <div class="timeline-4 left-4">
-                            <div class="card gradient-custom">
-                            <div class="card-body p-4">
-                                <i class="fas fa-campground fa-2x mb-3"></i>
-                                <h4>Senior Student Leader</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <p>Open Access Labs</p>
-                                    </div>
-                                    <div class="col">
-                                        <p class="small text-white-50 mb-4" style="text-align:right">Aug. 2021 - Dec. 2022</p>
-                                    </div>
-                                </div>
-                                
-                                <p>I managed computers and printers across Texas A&M's central campus while training and navigating my team of student workers through structural changes to our team and department.
-                                </p>
-                                <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Teams</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#839b89">Mentoring</h6>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!-- Tech. Consulting Intern -->
-                        <div class="timeline-4 right-4">
-                            <div class="card gradient-custom-4">
-                            <div class="card-body p-4">
-                                <i class="fas fa-sun fa-2x mb-3"></i>
-                                <h4>Technology Consulting Intern - Engineering Track</h4>
-                                <div class="row">
-                                    <div class="col">
-                                        <p>EY (Ernst & Young)</p>
-                                    </div>
-                                    <div class="col">
-                                        <p class="small text-white-50 mb-4" style="text-align:right">Jun. 2021 - Aug. 2021</p>
-                                    </div>
-                                </div>
-                                <p>Performed and documented user testing throughout the development of a Pega software product. I also helped in researching and building a business plan for a client focused on resiliency.
-                                </p>
-                                <h6 class="badge bg-light mb-0" style="color:#8a6672">Azure DevOps</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Excel</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#0b4259">JSON</h6>
-                                <h6 class="badge bg-light mb-0" style="color:#839b89">Research</h6>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!-- Student Leader/Technician -->
-                        <div class="timeline-4 left-4">
-                            <div class="card gradient-custom">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-palette fa-2x mb-3"></i>
-                                    <h4>Student Technician</h4>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>Open Access Labs</p>
-                                        </div>
-                                        <div class="col">
-                                            <p class="small text-white-50 mb-4" style="text-align:right">Aug. 2020 - May 2021</p>
-                                        </div>
-                                    </div>
-                                    <p>I trained new team members and aided in special projects while maintaining computers and printers in the heart of Texas A&M University.
-                                    </p>
-                                    <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
-                                    <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Teams</h6>
-                                    <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
-                                    <h6 class="badge bg-light mb-0" style="color:#839b89">Mentoring</h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Student Assitant -->
-                        <div class="timeline-4 right-4">
-                            <div class="card gradient-custom-4">
-                                <div class="card-body p-4">
-                                    <i class="fas fa-laugh-beam fa-2x mb-3"></i>
-                                    <h4>Student Assistant</h4>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p>Open Access Labs</p>
-                                        </div>
-                                        <div class="col">
-                                            <p class="small text-white-50 mb-4" style="text-align:right">Jul. 2019 - May 2020</p>
-                                        </div>
-                                    </div>
-                                    <p>Maintained over 630 computers and printers across Texas A&M's campus through resource management and collaboration with teammates.
-                                    </p>
-                                    <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
-                                    <h6 class="badge bg-light mb-0" style="color:#8a6672">Slack</h6>
-                                    <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col mx-auto text-center" style="color: white;">
-                    <h3>Educational Background</h3>
-                </div>
-
-                <!-- Education Timeline -->
-                <div class="container py-5">
-                    <div class="main-timeline-2">
-                      <div class="timeline-2 left-2">
-                        <div class="card">
-                            <a href="https://tamu.edu"><img src="https://facilities.tamu.edu/_assets/images/hero.jpg" class="card-img-top"
-                                alt="Responsive image"></a>
-                          <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Texas A&M University</h4>
-                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2018 - 2022</p>
-                            <p class="mb-0">Obtaining a Bachelor of Science in Computer Science, I navigated through courses in foundational engineering and core computing concepts with different tracks for breadth and depth. My primary focus was with information systems with an additional emphasis area and minor in Meteorology.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="timeline-2 right-2">
-                        <div class="card">
-                            <a href="https://www.emsisd.com/chisholmtrail">
-                                <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/308964302_1018023839083590_8573840012494260409_n.jpg?stp=dst-jpg_p960x960&_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=mwZnxX1SdGcAX9pt_8z&_nc_ht=scontent-dfw5-1.xx&oh=00_AfCjAS5B-fvK3Y_zc0QphAf0iZQMY3Z2KsY3MsonSYdxzA&oe=63AAF2C5" class="card-img-top"
-                            alt="Responsive image">
+                    <h1>
+                        Alexa R. Tello
+                    </h1>
+                    <h3>
+                        <span>Developer</span> | <span>Lifelong Student</span>
+                    </h3>
+                    <!-- Social Media Buttons-->
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-sm-2">
+                            <a href="https://linkedin.com/in/alexatello/">
+                              <i class="bi bi-linkedin" style="color: white; font-size: 36px;"></i>
                             </a>
-                          <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Chisholm Trail High School</h4>
-                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2014 - 2018</p>
-                            <p class="mb-0">Expanding beyond the standard high school curriculum with an emphasis in STEM and interdisciplinary areas, I partook in my school district's budding digital media and computing courses. Notable achievements include completing 14 Advanced Placement courses and graduating 8th of my class.</p>
-                          </div>
                         </div>
-                      </div>
-                      <div class="timeline-2 left-2">
-                        <div class="card">
-                            <a href="https://www.emsisd.com/hctc">
-                                <img src="https://vlkarchitects.com/assets/projects/_1200x630_crop_center-center_82_none/holl4.jpg?mtime=1506447904" class="card-img-top"
-                            alt="Responsive image">
+                        <div class="col-sm-2">
+                            <a href="https://github.com/tello-alexa">
+                              <i class="bi bi-github" style="color: white; font-size: 36px;"></i>
                             </a>
-                          <div class="card-body p-4">
-                            <h4 class="fw-bold mb-4">Hollenstein Career & Technology Center</h4>
-                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2016 - 2017</p>
-                            <p class="mb-0">Offering various career-related programs, I followed their Animation track to support my interest in digital media, learning core animation principles, 2-D animation in Adobe Animate, and 3-D modeling and animation in Autodesk Maya.</p>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>            
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container-fluid justify-content-center" style="background-color: #f5af82; width: 100%; padding-top: 50px; padding-bottom: 50px;">   
-                <!-- Section Header -->
-                <div class="col mx-auto text-center" style="color: white;">
-                    <h5>Projects</h5>
-                    <h2>Here are some of my most impactful projects.</h2>
-                </div>
-
-                <!-- Projects: Row 1 -->
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:10px;">
-                    <!-- Senior Capstone -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/21/Music-sound-waves-Graphics-22099235-1.png" class="card-img-top"
-                            alt="Sound waves" />
-                            <div class="card-body">
-                            <h5 class="card-title">Audio Signal Categorization</h5>
-                            <p class="card-text">
-                                As the senior capstone for my Bachelor's degree, I helped design and develop an 
-                                algorithm which sorted audio based on its frequency components.
-                            </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Fall 2022</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- HCI Health Retention -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_3ds_13/nintendo_2ds_2/CI16_N2DS_streetpass_small_image950w.jpg" class="card-img-top"
-                          alt="Nintendo StreetPass infographic" />
-                        <div class="card-body">
-                          <h5 class="card-title">HCI Problem & Solution</h5>
-                          <p class="card-text">
-                            Designed an application meant to increase user retention and follow-through
-                            in life betterment apps.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Fall 2022</small>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Database Design II -->
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="https://roadtrippingcalifornia.com/wp-content/uploads/2021/03/El-Capitan-Yosemite.jpg" class="card-img-top"
-                          alt="El Capitan at Yosemite National Park" />
-                        <div class="card-body">
-                          <h5 class="card-title">Happy Campers' Database</h5>
-                          <p class="card-text">
-                            Built a database and supporting UI to act as a national park campsite reservation website.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Summer 2022</small>
-                        </div>
-                      </div>
+                        <div class="col-sm-2">
+                            <a href="mailto:tello.alexa@yahoo.com">
+                                <i class="bi bi-envelope-fill" style="color: white; font-size: 36px;"></i>
+                            </a>
+                        </div>                        
                     </div>
                 </div>
+            </div>    
+        </div>
 
-                <!-- Projects: Row 2 -->
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
-                    <!-- Student Org. Redesign -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3J1nJOKJOZStXtlkTuT0R4OZdB6-fFueBvQ&usqp=CAU" class="card-img-top"
-                              alt="Pair of thespian masks: one happy, one sad" />
-                            <div class="card-body">
-                              <h5 class="card-title">Student Org. Website Redesign</h5>
-                              <p class="card-text">
-                                Redesigned and developed a website for a local student organization.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2022</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Power Plant Design -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://insideclimatenews.org/wp-content/uploads/2021/04/duke-power_luke-sharrett-bloomberg-getty-scaled.jpg" class="card-img-top"
-                              alt="Smoke stacks of a power plant" />
-                            <div class="card-body">
-                              <h5 class="card-title">Coal Power Plant Design</h5>
-                              <p class="card-text">
-                                Designed a 500 KW coal power plant while accounting the pollutants it generates.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2022</small>
-                            </div>
-                          </div>
-                    </div>
-
-                    <!-- IoT Issues -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://techcrunch.com/wp-content/uploads/2016/04/iot.jpg?w=1390&crop=1" class="card-img-top"
-                              alt="Hacker attempting to access devices" />
-                            <div class="card-body">
-                              <h5 class="card-title">Legal & Ethical Issues of the Internet of Things</h5>
-                              <p class="card-text">
-                                Researched the legal standing, or lack thereof, of protecting IoT.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Fall 2021</small>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-
-                <!-- Projects: Row 3 -->
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
-                    <!-- POS System Database -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://sundayapp.com/app/uploads/2022/02/Sunday_restaurant_1483-scaled-e1643837776932.jpg" class="card-img-top"
-                              alt="Someone taking an order from a POS system" />
-                            <div class="card-body">
-                              <h5 class="card-title">POS System Database</h5>
-                              <p class="card-text">
-                                Recreating a POS system by building a database and UI for customers and employees to interact with.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2021</small>
-                            </div>
-                          </div>
-                    </div>
-
-                    <!-- Personal Website -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://www.dreamhost.com/blog/wp-content/uploads/2018/09/elements-web-design-opt.jpg" class="card-img-top"
-                              alt="People designing the look for a web application" />
-                            <div class="card-body">
-                              <h5 class="card-title">Personal Website</h5>
-                              <p class="card-text">
-                                The first iteration of my website, it served to showcase my portfolio while learning about web development.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2021</small>
-                            </div>
-                          </div>
-                    </div>
-
-                    <!-- Stock Selector -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg" class="card-img-top"
-                              alt="Stock prices figure" />
-                            <div class="card-body">
-                              <h5 class="card-title">Stock Selector and Predictor</h5>
-                              <p class="card-text">
-                                Took historical stock market data and used it to predict future values based on performance.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Fall 2020 - Spring 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projects: Row 4 -->
-                <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
-                    <!-- SLR Projection -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://thehill.com/wp-content/uploads/sites/2/2021/08/ocean-florida_080921getty_impacts.jpg?w=1280" class="card-img-top"
-                              alt="Sea water approaching a city skyline" />
-                            <div class="card-body">
-                              <h5 class="card-title">Sea Level Rise Projection</h5>
-                              <p class="card-text">
-                                Using historical sea levels around the world to predict sea level rise through the rest of the 21st century.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Fall 2020</small>
-                            </div>
-                          </div>
-                    </div>
-
-                    <!-- Security Camera Research -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://pyxis.nymag.com/v1/imgs/05a/0f9/a9ee08e94a61ab4b6a023fbc70c4efd55f-09-cam.2x.rsocial.w600.jpg" class="card-img-top"
-                              alt="Security camera overlooking a backyard playground" />
-                            <div class="card-body">
-                              <h5 class="card-title">Security Camera Research</h5>
-                              <p class="card-text">
-                                Recommended a security camera system to a church for their daycare based on industry research and surveying locals.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2020</small>
-                            </div>
-                          </div>
-                    </div>
-
-                    <!-- CNC Arm Tracing -->
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://epictool.ca/wp-content/uploads/2020/12/AdobeStock_296563419-1024x614.jpeg" class="card-img-top"
-                              alt="CNC machine cutting through a metal sheet" />
-                            <div class="card-body">
-                              <h5 class="card-title">CNC Arm Tracing</h5>
-                              <p class="card-text">
-                                Developed an algorithm for a CNC arm to mimic recorded movements.
-                              </p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Spring 2019</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Scroll Button -->
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="col mx-auto text-center">
+                <a href="#about">
+                  <i class="bi bi-arrow-down-circle" style="color: white; font-size: 36px;"></i>
+                </a>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Contact Form -->
-        <section id="contact">
-            <div class="container-fluid" style="color: white; background-color: #8a6672; width: 100%; padding-top: 50px; padding-bottom: 50px;">
-                <!-- Section Header -->
-                <div class="col mx-auto text-center">
-                    <h5>Contact</h5>
-                    <h1>Let's keep in touch!</h1>
-                </div>
+    <!-- About Section -->      
+    <section id="about" style="color: white;">  
+      <div class="container-fluid" style="color: white;background-color:#0a5066; width: 100%; padding-top: 75px; padding-bottom: 50px;">
+        <!-- Section Header -->
+        <div class="col mx-auto text-center">
+          <h5>About</h5>
+          <h1>Howdy! I'm Alexa.</h1>
+        </div>
 
-                <!-- Contact Form -->
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="container py-4">
-                            <!-- Form -->
-                            <form action="https://formspree.io/f/xeqwjple" method="POST">
-                                <!-- Name input -->
-                                <div class="form-outline mb-4">
-                                    <label class="form-label" for="form4Example1">Name</label>
-                                    <input type="text" name="name" id="form4Example1" placeholder="Name" class="form-control" />
-                                </div>
-                                
-                                <!-- Email input -->
-                                <div class="form-outline mb-4">
-                                    <label class="form-label" for="form4Example2">Email address</label>
-                                    <input type="email" name="email" id="form4Example2" placeholder="youremail@email.com" class="form-control" />
-                                </div>
-                                
-                                <!-- Message input -->
-                                <div class="form-outline mb-4">
-                                    <label class="form-label" for="form4Example3">Message</label>
-                                    <textarea class="form-control" name="message" placeholder="Message" id="form4Example3" rows="4"></textarea>
-                                </div>
-                                
-                                <!-- Submit button -->
-                                <button type="submit" class="btn btn-info btn-block mb-4">Send!</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>     
+        <!-- Profile Pic and Bio -->
+        <div class="row justify-content-center" style="padding-top: 20px">
+          <div class="col-sm-3" style="text-align: center; align-items: center;">
+            <img src="my_files/profile_pic.jfif" width="250" height="250">
+          </div>
+
+          <div class="col-sm-4" style="margin-top: auto; margin-bottom: auto;">
+            <p class="lead">I'm a recent graduate with a B.S. in Computer Science from Texas A&M University, with a specialization in information systems. My current interests include data management, app development, atmospheric sciences, and more.</p>
+          </div>
+        </div>
+
+        <!-- Status and Skills -->
+        <div class="row justify-content-center" style="padding-top: 20px">
+          <div class="col-sm-4">
+            <h2 class="text-center">Status</h2>
+            <p>
+              I am currently open to new oportunities in software engineering, technology consulting, or project management. If you believe that I'm a good fit for any roles, please email me at <a href="mailto:tello.alexa@yahoo.com">tello.alexa@yahoo.com</a>.
+            </p>
+
+            <div class="container mx-auto">
+              <strong>Full Name: </strong><span>Alexa Tello</span><br>
+              <strong>Location: </strong><span>Dallas-Fort Worth Metroplex</span><br>
+              <strong>Email: </strong><span>tello.alexa@yahoo.com</span>
+              <hr/>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="text-center">Skills</h2>
+            <p>
+              I'm a detail-oriented team player with strengths in back-end development and research, gaining an assortment of knowledge through my projects and coursework. Below is an overview of my technical skills:
+            </p>
+                
+            <!-- Programming Languages List -->
+            <h5 style="text-align:left">Programming Languages:</h5>
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>C/C++</li>
+                  <li>SQL/MySQL</li>
+                  <li>CSS</li>
+                  <li>Dart</li>
+                  <li>C#</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>MATLAB</li>
+                  <li>Scheme</li>
+                </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                  <li>Java</li>
+                  <li>HTML</li>
+                  <li>Ruby</li>
+                  <li>R</li>
+                  </ul>
               </div>
             </div>
-        </section>
 
-        <!-- Footer -->
-        <div class="container-fluid text-center" style="color: white; background-color:#0b4259;">
-            <p>
-                © Copyright 2022 Alexa Tello
-            </p>
+            <!-- Software List -->
+            <h5 style="text-align:left">Software:</h5>
+            <ul>
+              <li><h6>For Development</h6></li>
+              <div class="row">
+                <div class="col">
+                  <ul>
+                    <li>Jupyter Notebook</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li>Flutter</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li>Heroku</li>
+                  </ul>
+                </div>
+              </div>
+              <li><h6>For Project Management</h6></li>
+              <div class="row">
+                <div class="col">
+                  <ul>
+                    <li>Azure DevOps</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li>ServiceNow</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li>Microsoft Teams</li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
         </div>
-    </body>
+
+        <!-- Get Info Buttons -->
+        <div class="row justify-content-center" style="padding-top: 20px">
+            <div class="col-sm-2 text-center">
+                <a href="#contact" class="btn btn-outline-info" role="button">
+                    Contact Me
+                </a>                        
+            </div>
+            <div class="col-sm-2 text-center">
+                <a role="button" href="my_files/resume.pdf" class="btn btn-outline-info">
+                    View Resume
+                </a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container-fluid" style="background-color:#839b89; width: 100%; padding-top: 75px; padding-bottom: 50px;">
+            <!-- Section Header -->
+            <div class="col mx-auto text-center" style="color: white;">
+                <h5>Resume</h5>
+                <h2>Here are the work experiences and education that helped build my credentials.</h2>
+                <div class="col-sm-4 mx-auto text-center">
+                    <p>To view how some of my other techincal skills came into play, look through some of my most notable <a href="#projects">projects</a>.</p>
+                </div>
+                <h3>Work Experience</h3>
+            </div>
+
+          <!-- Job Timeline w/Pics-->
+          <div class="container">
+            <div class="timeline">
+              <!-- Sr. Student Leader -->
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  <img class="align-items-center justify-content-center text-center" src="my_files/badge_posterized.png" style="width:auto;height:35vh;">
+                </div>
+                <div class="timeline-content">
+                  <div class="card gradient-custom">
+                    <div class="card-body p-4">
+                        <i class="fas fa-campground fa-2x mb-3"></i>
+                        <h4>Senior Student Leader</h4>
+                        <div class="row">
+                            <div class="col">
+                                <p>Open Access Labs</p>
+                            </div>
+                            <div class="col">
+                                <p class="small text-white-50 mb-4" style="text-align:right">Aug. 2021 - Dec. 2022</p>
+                            </div>
+                        </div>
+                        
+                        <p>I managed computers and printers across Texas A&M's central campus while training and navigating my team of student workers through structural changes to our team and department.
+                        </p>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Teams</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Mentoring</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tech. Consulting Intern -->
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  <a href="https://www.ey.com/en_us">
+                    <img class="rounded img-thumbnail" src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/innovation/ey-margaret-hunt-hill-bridge-dallas-static.jpg" style="width:auto;height:40vh;">
+                  </a>
+                </div>
+                <div class="timeline-content">
+                  <div class="card gradient-custom-4">
+                    <div class="card-body p-4">
+                        <i class="fas fa-sun fa-2x mb-3"></i>
+                        <h4>Tech. Consulting Intern - Engineering Track</h4>
+                        <div class="row">
+                            <div class="col">
+                                <p>EY (Ernst & Young)</p>
+                            </div>
+                            <div class="col">
+                                <p class="small text-white-50 mb-4" style="text-align:right">Jun. 2021 - Aug. 2021</p>
+                            </div>
+                        </div>
+                        <p>Performed and documented user testing throughout the development of a Pega software product. I also helped in researching and building a business plan for a client focused on resiliency.
+                        </p>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">Azure DevOps</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Excel</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#0b4259">JSON</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Research</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Student Leader -->
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  <a href="https://oal.tamu.edu/">
+                    <img class="rounded img-thumbnail" src="https://oal.tamu.edu/getmedia/bc44da76-329e-4357-bb7d-e689406218b4/01-SCC-4-200-003.aspx" style="width:auto;height:37.5vh;">
+                  </a>
+                </div>
+                <div class="timeline-content">
+                  <div class="card gradient-custom">
+                    <div class="card-body p-4">
+                        <i class="fas fa-palette fa-2x mb-3"></i>
+                        <h4>Student Technician</h4>
+                        <div class="row">
+                            <div class="col">
+                                <p>Open Access Labs</p>
+                            </div>
+                            <div class="col">
+                                <p class="small text-white-50 mb-4" style="text-align:right">Aug. 2020 - May 2021</p>
+                            </div>
+                        </div>
+                        <p>I trained new team members and aided in special projects while maintaining computers and printers in the heart of Texas A&M University.
+                        </p>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">Microsoft Teams</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Mentoring</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Student Assistant-->
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  <img class="align-items-center justify-content-center text-center" src="my_files/pin.png" style="padding-top:2vh; width:auto;height:35vh;">
+                </div>
+                <div class="timeline-content">
+                  <div class="card gradient-custom-4">
+                    <div class="card-body p-4">
+                        <i class="fas fa-laugh-beam fa-2x mb-3"></i>
+                        <h4>Student Assistant</h4>
+                        <div class="row">
+                            <div class="col">
+                                <p>Open Access Labs</p>
+                            </div>
+                            <div class="col">
+                                <p class="small text-white-50 mb-4" style="text-align:right">Jul. 2019 - May 2020</p>
+                            </div>
+                        </div>
+                        <p>Maintained over 630 computers and printers across Texas A&M's campus through resource management and collaboration with teammates.
+                        </p>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">ServiceNow</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#8a6672">Slack</h6>
+                        <h6 class="badge bg-light mb-0" style="color:#839b89">Troubleshooting</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mx-auto text-center" style="color: white;">
+              <h3>Educational Background</h3>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="container py-5">
+              <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                  <div class="card">
+                      <a href="https://tamu.edu"><img src="https://facilities.tamu.edu/_assets/images/hero.jpg" class="card-img-top"
+                          alt="Responsive image"></a>
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">Texas A&M University</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2018 - 2022</p>
+                      <p class="mb-0">Obtaining a Bachelor of Science in Computer Science, I navigated through courses in foundational engineering and core computing concepts with different tracks for breadth and depth. My primary focus was with information systems with an additional emphasis area and minor in Meteorology.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-2 right-2">
+                  <div class="card">
+                      <a href="https://www.emsisd.com/chisholmtrail">
+                          <img src="https://www.balfourbeattyus.com/Balfour-dev.allata.com/media/content-media/Our-Company/Project-Portfolio_Buildings_Eagle_Mountain_ISD_Chisholm_Trail_HS_Stadium_Hero-Image-1280x582-hero-image.jpg?ext=.jpg" class="card-img-top"
+                      alt="Responsive image">
+                      </a>
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">Chisholm Trail High School</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2014 - 2018</p>
+                      <p class="mb-0">Expanding beyond the standard high school curriculum with an emphasis in STEM and interdisciplinary areas, I partook in my school district's budding digital media and computing courses. Notable achievements include completing 14 Advanced Placement courses and graduating 8th of my class.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-2 left-2">
+                  <div class="card">
+                      <a href="https://www.emsisd.com/hctc">
+                          <img src="https://vlkarchitects.com/assets/projects/_1200x630_crop_center-center_82_none/holl4.jpg?mtime=1506447904" class="card-img-top"
+                      alt="Responsive image">
+                      </a>
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">Hollenstein Career & Technology Center</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>2016 - 2017</p>
+                      <p class="mb-0">Offering various career-related programs, I followed their Animation track to support my interest in digital media, learning core animation principles, 2-D animation in Adobe Animate, and 3-D modeling and animation in Autodesk Maya.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>           
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container-fluid justify-content-center" style="background-color: #f5af82; width: 100%; padding-top: 75px; padding-bottom: 50px;">   
+            <!-- Section Header -->
+            <div class="col mx-auto text-center" style="color: white;">
+                <h5>Projects</h5>
+                <h2>Here are some of my most impactful projects.</h2>
+            </div>
+
+            <!-- Projects: Row 1 -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:10px;">
+                <!-- Senior Capstone -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/21/Music-sound-waves-Graphics-22099235-1.png" class="card-img-top"
+                        alt="Sound waves" />
+                        <div class="card-body">
+                        <h5 class="card-title">Audio Signal Categorization</h5>
+                        <p class="card-text">
+                            As the senior capstone for my Bachelor's degree, I helped design and develop an 
+                            algorithm which sorted audio based on its frequency components.
+                        </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Fall 2022</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HCI Health Retention -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://static.wikia.nocookie.net/nintendo/images/9/95/StreetPass_-_How_It_Works.svg/revision/latest?cb=20150707155943&path-prefix=en" class="card-img-top"
+                      alt="Nintendo StreetPass infographic" />
+                    <div class="card-body">
+                      <h5 class="card-title">HCI Problem & Solution</h5>
+                      <p class="card-text">
+                        Designed an application meant to increase user retention and follow-through
+                        in life betterment apps.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Fall 2022</small>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Database Design II -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://roadtrippingcalifornia.com/wp-content/uploads/2021/03/El-Capitan-Yosemite.jpg" class="card-img-top"
+                      alt="El Capitan at Yosemite National Park" />
+                    <div class="card-body">
+                      <h5 class="card-title">Happy Campers' Database</h5>
+                      <p class="card-text">
+                        Built a database and supporting UI to act as a national park campsite reservation website.
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Summer 2022</small>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Projects: Row 2 -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
+                <!-- Student Org. Redesign -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3J1nJOKJOZStXtlkTuT0R4OZdB6-fFueBvQ&usqp=CAU" class="card-img-top"
+                          alt="Pair of thespian masks: one happy, one sad" />
+                        <div class="card-body">
+                          <h5 class="card-title">Student Org. Website Redesign</h5>
+                          <p class="card-text">
+                            Redesigned and developed a website for a local student organization.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2022</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Plant Design -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://insideclimatenews.org/wp-content/uploads/2021/04/duke-power_luke-sharrett-bloomberg-getty-scaled.jpg" class="card-img-top"
+                          alt="Smoke stacks of a power plant" />
+                        <div class="card-body">
+                          <h5 class="card-title">Coal Power Plant Design</h5>
+                          <p class="card-text">
+                            Designed a 500 KW coal power plant while accounting the pollutants it generates.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2022</small>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- IoT Issues -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://techcrunch.com/wp-content/uploads/2016/04/iot.jpg?w=1390&crop=1" class="card-img-top"
+                          alt="Hacker attempting to access devices" />
+                        <div class="card-body">
+                          <h5 class="card-title">Legal & Ethical Issues of the Internet of Things</h5>
+                          <p class="card-text">
+                            Researched the legal standing, or lack thereof, of protecting IoT.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Fall 2021</small>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <!-- Projects: Row 3 -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
+                <!-- POS System Database -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://sundayapp.com/app/uploads/2022/02/Sunday_restaurant_1483-scaled-e1643837776932.jpg" class="card-img-top"
+                          alt="Someone taking an order from a POS system" />
+                        <div class="card-body">
+                          <h5 class="card-title">POS System Database</h5>
+                          <p class="card-text">
+                            Recreating a POS system by building a database and UI for customers and employees to interact with.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2021</small>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Personal Website -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.dreamhost.com/blog/wp-content/uploads/2018/09/elements-web-design-opt.jpg" class="card-img-top"
+                          alt="People designing the look for a web application" />
+                        <div class="card-body">
+                          <h5 class="card-title">Personal Website</h5>
+                          <p class="card-text">
+                            The first iteration of my website, it served to showcase my portfolio while learning about web development.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2021</small>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Stock Selector -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg" class="card-img-top"
+                          alt="Stock prices figure" />
+                        <div class="card-body">
+                          <h5 class="card-title">Stock Selector and Predictor</h5>
+                          <p class="card-text">
+                            Took historical stock market data and used it to predict future values based on performance.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Fall 2020 - Spring 2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects: Row 4 -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center" style="padding-top:20px;">
+                <!-- SLR Projection -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://thehill.com/wp-content/uploads/sites/2/2021/08/ocean-florida_080921getty_impacts.jpg?w=1280" class="card-img-top"
+                          alt="Sea water approaching a city skyline" />
+                        <div class="card-body">
+                          <h5 class="card-title">Sea Level Rise Projection</h5>
+                          <p class="card-text">
+                            Using historical sea levels around the world to predict sea level rise through the rest of the 21st century.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Fall 2020</small>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Security Camera Research -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://pyxis.nymag.com/v1/imgs/05a/0f9/a9ee08e94a61ab4b6a023fbc70c4efd55f-09-cam.2x.rsocial.w600.jpg" class="card-img-top"
+                          alt="Security camera overlooking a backyard playground" />
+                        <div class="card-body">
+                          <h5 class="card-title">Security Camera Research</h5>
+                          <p class="card-text">
+                            Recommended a security camera system to a church for their daycare based on industry research and surveying locals.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2020</small>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- CNC Arm Tracing -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://epictool.ca/wp-content/uploads/2020/12/AdobeStock_296563419-1024x614.jpeg" class="card-img-top"
+                          alt="CNC machine cutting through a metal sheet" />
+                        <div class="card-body">
+                          <h5 class="card-title">CNC Arm Tracing</h5>
+                          <p class="card-text">
+                            Developed an algorithm for a CNC arm to mimic recorded movements.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Spring 2019</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <div class="container-fluid" style="color: white; background-color: #8a6672; width: 100%; padding-top: 75px; padding-bottom: 50px;">
+            <!-- Section Header -->
+            <div class="col mx-auto text-center">
+                <h5>Contact</h5>
+                <h1>Let's keep in touch!</h1>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="container py-4">
+                        <!-- Form -->
+                        <form action="https://formspree.io/f/xeqwjple" method="POST">
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form4Example1">Name</label>
+                                <input type="text" name="name" id="form4Example1" placeholder="Name" class="form-control" />
+                            </div>
+                            
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form4Example2">Email address</label>
+                                <input type="email" name="email" id="form4Example2" placeholder="youremail@email.com" class="form-control" />
+                            </div>
+                            
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form4Example3">Message</label>
+                                <textarea class="form-control" name="message" placeholder="Message" id="form4Example3" rows="4"></textarea>
+                            </div>
+                            
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-info btn-block mb-4">Send!</button>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            
+            <!-- Scroll Button -->
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="col mx-auto text-center">
+                  <a href="#home">
+                    <i class="bi bi-arrow-up-circle" style="color: white; font-size: 36px;"></i>
+                  </a>
+                  <h5>Back to top</h5>
+              </div>
+            </div>              
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid text-center" style="color: white; background-color:#0b4259;">
+        <p>
+            © Copyright 2022 Alexa Tello
+        </p>
+    </div>
+  </body>
 </html>

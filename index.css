@@ -1,5 +1,5 @@
 body {
-    background-image: url(mountains_bg.jpg);
+    background-image: url(my_files/mountains_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: cadetblue;
@@ -7,22 +7,22 @@ body {
     width: 100%;
 }
 a:link {
-    color: #d8ff89;
+    color: #ffe9af;
     background: transparent;
     text-decoration: none;
 }
 a:visited {
-    color: #eab385;
+    color: #ffe9af;
     background: transparent;
     text-decoration: none;
 }
 a:hover {
-    color: #bba6b7;
+    color: #ffe9af;
     background: transparent;
     text-decoration: underline;
 }
 a:active {
-    color: #f3e0dc;
+    color: #ffe9af;
     background: transparent;
     text-decoration: underline;
 }
@@ -82,9 +82,9 @@ a:active {
     top: 18px;
     z-index: 1;
     right: 30px;
-    border: medium solid rgba(37, 117, 252, 1);
+    border: medium solid rgba(81, 110, 124, 1);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgba(37, 117, 252, 1);
+    border-color: transparent transparent transparent rgba(81, 110, 124, 1);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -94,9 +94,9 @@ a:active {
     top: 18px;
     z-index: 1;
     left: 30px;
-    border: medium solid rgba(245, 87, 108, 1);
+    border: medium solid rgba(172, 101, 105, 1);
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+    border-color: transparent rgba(172, 101, 105, 1) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -144,39 +144,39 @@ a:active {
 
 .gradient-custom {
     /* fallback for old browsers */
-    background: #6a11cb;
+    background: #7f6473;
 
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(
     to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
+    rgba(127, 100, 115, 1),
+    rgba(81, 110, 124, 1)
     );
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(
     to right,
-    rgba(106, 17, 203, 1),
-    rgba(37, 117, 252, 1)
+    rgba(127, 100, 115, 1),
+    rgba(81, 110, 124, 1)
     );
 }
 
 .gradient-custom-4 {
     /* fallback for old browsers */
-    background: #f093fb;
+    background: #d79f6e;
 
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(
     to left,
-    rgba(240, 147, 251, 1),
-    rgba(245, 87, 108, 1)
+    rgba(215, 159, 110, 1),
+    rgba(172, 101, 105, 1)
     );
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(
     to left,
-    rgba(240, 147, 251, 1),
-    rgba(245, 87, 108, 1)
+    rgba(215, 159, 110, 1),
+    rgba(172, 101, 105, 1)
     );
 }
 /* The actual timeline (the vertical ruler) */
@@ -292,5 +292,185 @@ a:active {
     /* Make all right containers behave like the left ones */
     .right-2 {
     left: 0%;
+    }
+}
+
+.timeline {
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5rem;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+}
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2px dashed white;
+    height: 100%;
+    display: block;
+}
+
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    text-align: right;
+    margin-right: 20px;
+    color: #bcd0f7;
+    font-size: 1.5rem;
+}
+.timeline-row .timeline-time small {
+    display: block;
+    font-size: 0.8rem;
+}
+.timeline-row .timeline-content {
+    position: relative;
+    background: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+}
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -49px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 10;
+    background: white;
+}
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.timeline-row .timeline-content p {
+    margin-bottom: 15px;
+}
+.timeline-row .timeline-content .thumbs {
+    margin-bottom: 20px;
+    display: flex;
+}
+.timeline-row .timeline-content .thumbs img {
+    margin: 5px;
+    max-width: 60px;
+}
+.timeline-row .timeline-content .badge {
+    color: #ffffff;
+    background: white;
+}
+.timeline-row:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+    background-color: rgba(172, 101, 105, 1);
+}
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -52px;
+    right: initial;
+}
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 7.5%;
+}
+.timeline-row:nth-child(even) .timeline-time {
+    left: auto;
+    right: 50%;
+    text-align: left;
+    margin-right: 7.5%;
+}
+.timeline-row:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+    background-color: rgba(81, 110, 124, 1);
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        padding: 15px;
+    }
+    .timeline:after {
+        border: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) {
+        padding: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(even) {
+        padding: 0;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+        text-align: left;
+        text-align: center;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content {
+        margin: 0;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content:before {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content:after {
+        display: none;
     }
 }
