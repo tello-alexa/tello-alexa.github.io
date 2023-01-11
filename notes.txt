@@ -1,6 +1,0 @@
-Spring 19
-    CNC Arm tracing program
-Spring 20
-    English Research/Survey
-Fall 20
-    SLR projection
